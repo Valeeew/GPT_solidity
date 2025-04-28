@@ -1,0 +1,105 @@
+{
+	"compiler": {
+		"version": "0.8.29+commit.ab55807c"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "n",
+						"type": "uint8"
+					}
+				],
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "incr",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "val",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"add(uint8)": {
+					"params": {
+						"n": "Amount to add (wraps around on overflow)"
+					}
+				},
+				"incr()": {
+					"details": "Uses `unchecked` to disable the default 0.8.x overflow revert"
+				},
+				"val()": {
+					"returns": {
+						"_0": "The current value of `v`"
+					}
+				}
+			},
+			"title": "Counter with unchecked overflow",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"add(uint8)": {
+					"notice": "Add `n` to `v` without overflow checks"
+				},
+				"incr()": {
+					"notice": "Increment `v` by 1 without overflow checks"
+				},
+				"val()": {
+					"notice": "Read the current counter value"
+				}
+			},
+			"notice": "Demonstrates how to reproduce Solidity 0.7.x wraparound behavior in 0.8.x",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"counter.sol": "Counter"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"counter.sol": {
+			"keccak256": "0x20cea857b21059b0c84a5b4ed307a4a704db59b18d1bb72a9732092cb6f5d54d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://110a84fdb6672576af290fdda1c87ef6d7a8fbb4059843c3baadd6879aedcd4c",
+				"dweb:/ipfs/QmcZVym7qaU5R71K8MirVb26Tsz8WkR5TRXooRw9gvfD1f"
+			]
+		}
+	},
+	"version": 1
+}
