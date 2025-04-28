@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.29+commit.ab55807c"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "isFlagTrue",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "toggle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"isFlagTrue()": {
+					"notice": "Returns the current state of flag"
+				},
+				"toggle()": {
+					"notice": "Invert the value of flag"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"toggle.sol": "Flag"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"toggle.sol": {
+			"keccak256": "0x2ce5215dbaf67cb984745c506aa44ccebdd0a7202b5a7ec140885beaf5cf38eb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fdc979c8e366553c3dce05843db10afee58413bc16092a094fa532f1c5a556b1",
+				"dweb:/ipfs/QmcKg6hKRBtr5mYtrXUrgsEkJ4NTUoYiC1MVVdBZ53iedg"
+			]
+		}
+	},
+	"version": 1
+}
